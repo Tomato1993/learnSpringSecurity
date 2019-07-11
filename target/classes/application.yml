@@ -1,0 +1,19 @@
+server:
+  port: 8088
+
+spring:
+  thymeleaf:
+    cache: false
+  datasource: 
+    url: jdbc:mysql://localhost:3306/spring-security?useUnicode=true&characterEncoding=utf8mb4
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+logging:
+  file: spring.log
+  level:
+    root: INFO
